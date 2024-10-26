@@ -1,0 +1,106 @@
+@media screen and (max-width:480px){
+    header{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    nav{
+        position: relative;
+        width: 100%;
+        background-color: #ff4048;
+        padding: 10px;
+    }
+    #menunav ul{
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    #menunav ul li{
+        width: 100%;
+        text-align: start;
+        border-bottom: 2px white dotted;
+        color: white;
+
+    }
+    #menunav a{
+        width: 100%;
+        color: white;
+    }
+    #menu{
+        display: flex;
+    }
+    .movil{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .infoslide{
+        background-color: rgba(255, 64, 74, 0.671);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 400px;
+        height: auto;
+        padding: 20px;
+    }
+    .infoslide h1{
+        color: white;
+        text-align: center;
+    }
+    .fitnes{
+        display: none;
+    }
+    .services h2{
+        color: #ff4048;
+        padding-bottom: 10px;
+    }
+    .lin{
+        width: 15%;
+        color: black;
+        margin: 0 auto;
+        height: 5px;
+        background-color: black;
+        border: none;
+    }
+    .service{
+        flex-direction: column;
+        margin: auto;
+        width: auto;
+    }
+    .service article{
+        border: 2px #f5f5f5 solid;
+        width: 300px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .service p{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .galeria{
+        flex-direction: column-reverse;
+        gap: 40px;
+        padding-bottom: 20px;
+        align-items: center;
+        text-align: start;
+    }
+    .fotos{
+        grid-template: 1fr 1fr 1fr 1fr / auto;
+        gap: 20px;
+        justify-content: center;
+    }
+    .texto{
+        text-align: start;
+    }
+    .copy{
+        display: none;
+    }
+    .linea{
+        display: none;
+    }
+    footer{
+        border: 2px #ff4048 solid;
+    }
+}

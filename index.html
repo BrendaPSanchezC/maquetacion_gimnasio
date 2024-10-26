@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/movil.css">
+    <script src='https://kit.fontawesome.com/66c3e37d5e.js' crossorigin='anonymous'></script>
+    <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+    <link rel="stylesheet" href="fancybox.css">
+    <script src="fancybox.js"></script>
+    <script src="responsiveslides.js"></script>
+    <link rel="stylesheet" href="animate.css">
+    <script src="wow.min.js"></script>
+    <title>Maquetacion Gimnacio</title>
+</head>
+<body>
+    <header id="inicio" class="ancho">
+        <div class="movil">
+            <figure>
+                <img src="imagenes/logo.png" alt="texto de la imagen">
+            </figure>
+            <a href="#" id="menu"><i class='fa-solid fa-bars'></i></a>
+        </div>
+        <nav id="menunav">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">COACHES</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="flecha"><a href="#inicio"><i class="fa-solid fa-arrow-up"></i></a></div>
+    <section class="contenedor">
+        <ul class="rslides">
+            <li><img src="imagenes/slide1.jpg" alt=""></li>
+            <li><img src="imagenes/slide2.jpg" alt=""></li>
+            <li><img src="imagenes/slide3.jpg" alt=""></li>
+        </ul>
+        <div class="infoslide ancho">
+            <h1>BEST FITNES</h1>
+            <br>
+            <p class="fitnes">Our club encourages wellness by provideing top-notch equipment, first-class intructors, innovative classes, and qualified staff.</p>
+            <br>
+            <a href="#" class="btn">JOIN NOW</a>
+        </div>
+    </section>
+    <br><br>
+    <section class="services">
+        <h2>SERVICES</h2>
+        <hr class="lin">
+        <br><br>
+        <div class="service ancho">
+            <article class="wow animate__animated animate__backInLeft ">
+                <a href="#" class="servi"><i class="fas fa-award"></i></a>
+                <br>
+                <h3 class="titulo">QUALITY SERVICE</h3>
+                <p>At our fitness studio, you can experience the best level de customer service.</p>
+            </article>
+            <article class="wow animate__animated animate__backInLeft animate__delay-1s">
+                <a href="#" class="servi"><i class="fas fa-dumbbell"></i> </a>
+                <br>
+                <h3 class="titulo">SPACIOUS GYM</h3>
+                <p>Our gym has enough place for all kids of workouts and a wide variety of equipment.</p>
+            </article>
+            <article class="wow animate__animated animate__backInRight animate__delay-1s">
+                <a href="#" class="servi"><i class="fas fa-file-invoice"></i></a>
+                <br>
+                <h3 class="titulo">UNIQUE FITNESS PROGRAMS</h3>
+                <p>Our coaches have developed more than 50 fitness programs and workouts for you.</p>
+            </article>
+            <article class="wow animate__animated animate__backInRight">
+                <a href="#" class="servi"><i class="fas fa-users"></i></a>
+                <br>
+                <h3 class="titulo">GROUP CLASSES</h3>
+                <p>If you prefer training with friends, then our group classes have what you need.</p>
+            </article>
+        </div>
+        <br><br><br>
+    </section>
+    <section class="galeria">
+        <div class="fotos">
+            <a href="imagenes/foto1.jpg" data-fancybox="gallery" data-caption="Fotografia 1">
+                <figure class="imagen">
+                    <img src="imagenes/foto1.jpg" alt="">
+                </figure>
+            </a>
+            <a href="imagenes/foto2.jpg" data-fancybox="gallery" data-caption="Fotografia 2">
+                <figure class="imagen">
+                    <img src="imagenes/foto2.jpg" alt="">
+                </figure>
+            </a>
+            <a href="imagenes/foto3.jpg" data-fancybox="gallery" data-caption="Fotografia 3">
+                <figure class="imagen">
+                    <img src="imagenes/foto3.jpg" alt="texto de la imagen">
+                </figure>
+            </a>
+            <a href="imagenes/foto4.jpg" data-fancybox="gallery" data-caption="Fotografia 4">
+                <figure class="imagen">
+                    <img src="imagenes/foto4.jpg" alt="texto de la imagen">
+                </figure>
+            </a>
+        </div>
+        <div class="texto">
+            <p class="tit"><strong>GALLERY </strong>FITNESS<strong> CLUB</strong></p>
+            <p>Profit is the fitness club that makes fitness totally accessible to everybody. We promise to help people from all walks of life achieve their individual health and fitness goals - no matter their shape, age, and experience.</p>
+            <a href="#" class="btn">JOIN NOW</a>
+        </div>
+    </section>
+    <br><br><br>
+    <hr class=" linea ancho">
+    <footer class="ancho">
+        <div class="copy">
+            <p>
+                <i class="fa-regular fa-copyright"></i> 2020 Profit, Privacy Policy
+            </p>
+        </div>
+        <div class="iconos">
+            <a href="#"><i class='fa-brands fa-facebook'></i></a>
+            <a href="#"><i class='fa-brands fa-instagram'></i></a>
+            <a href="#"><i class='fa-brands fa-youtube'></i></a>
+        </div>
+    </footer>
+
+    <script>
+        //funcion slide
+        $(function() {
+            $(".rslides").responsiveSlides();
+          });
+
+          //funcion galeria
+          Fancybox.bind('[data-fancybox="gallery"]', {
+            
+          });
+          //funcion wow
+          new WOW().init();
+
+          //menu
+          $("#menu").click(function () {
+            $("#menunav").slideToggle();
+          });
+    </script>
+</body>
+</html>
