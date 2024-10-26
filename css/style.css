@@ -57,6 +57,7 @@ nav ul li:hover{
     position: relative;
     list-style: none;
     overflow: hidden;
+    width: 100%;
     min-height: 400px;
     padding: 0;
     margin: auto;
@@ -103,7 +104,7 @@ nav ul li:hover{
         left: 78%;
         transform: translate(-32%, -50%);
         z-index: 10;
-        width: 400px;
+        max-width: 400px;
         color: black;
         text-align: end;
         padding: 30px;
@@ -118,6 +119,9 @@ nav ul li:hover{
     .services{
         display: flex;
         flex-direction: column;
+    }
+    .lin{
+        display: none;
     }
     .services h2{
         text-align: center;
@@ -180,7 +184,7 @@ nav ul li:hover{
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    width: 350px;
+    max-width: 350px;
     }
     .tit{
     font-size: 2rem;
